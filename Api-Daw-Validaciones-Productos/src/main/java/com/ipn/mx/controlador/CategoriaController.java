@@ -132,8 +132,6 @@ public class CategoriaController {
 			return new  ResponseEntity<Map<String,Object>>(response,HttpStatus.INTERNAL_SERVER_ERROR);
 	
 		}
-		
-		catagoriaNueva = service.save(categoria);
 		response.put("mensaje", "insertado satisfacotriamente");
 		response.put("categoria", catagoriaNueva);
 		return new  ResponseEntity<Map<String,Object>>(response,HttpStatus.CREATED);
